@@ -1,0 +1,16 @@
+Videla Ribodino Iván Agustín
+Gonzalez Ricardo
+Ibañez Tejero Ezequiel
+
+
+
+c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+En el contexto actual no , pero Para hacer esto, ALFA debe seguir estos pasos:
+Agregar el remoto de GAMMA:
+git remote add gamma <URL_del_repositorio_de_gamma>
+Actualizar la rama principal desde el repositorio de GAMMA:
+git pull gamma main
+
+d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
+el fork?
+GitHub te da la opción de conservar las modificaciones echas en tu repositorio al momento de actualizar el fork.
