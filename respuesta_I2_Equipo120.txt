@@ -1,0 +1,98 @@
+Videla Ribodino Iván Agustín
+Gonzalez Ricardo
+Ibañez Tejero Ezequiel
+
+A - Para actualizar tu repositorio al estado que esté el repo que hice FORK existen 2 maneras: En tu repositorio cuando el repositorio al que hiciste fork es modificado github  te permite aplicar los cambios sin borrar tus commits o si se quiere tambien se puede borrar, la otra forma es por comandos que seria; git remote add upstream URL_del_reposotorio, luego git fetch upstream y por ultimo git merge upstream/main
+
+B - En el contexto actual no, pero para hacer esto, Gamma debe seguir estos pasos:
+Agregar el remoto de Alfa:
+git remote add Alfa <URL_del_repositorio_de_Alfa>
+Actualizar la rama principal desde el repositorio de Alfa:
+git pull alfa main
+
+c-¿Puede GAMMA actualizar su FORK al estado del fork de ALFA?
+En el contexto actual no , pero Para hacer esto, ALFA debe seguir estos pasos:
+Agregar el remoto de GAMMA:
+git remote add gamma <URL_del_repositorio_de_gamma>
+Actualizar la rama principal desde el repositorio de GAMMA:
+git pull gamma main
+
+d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quiero actualizar
+el fork?
+GitHub te da la opción de conservar las modificaciones echas en tu repositorio al momento de actualizar el fork.
+
+e - 
+Gonzalez Ricardo - BETA: 
+1 - 
+- echo "# TP_SO_i2_Equipo120" >> README.md
+- git init
+- git add README.md
+- git commit -m "Initial commit"
+- git branch -M main
+- git push -u origin main
+- touch fork.txt
+- git add .
+- git commit -m "fork.txt"
+- git push
+
+Ibañez Tejero Ezequiel - GAMMA: 
+2 - 
+- (Hace un fork del repositorio original desde GitHub)
+- git clone https://github.com/EzequielI/TP_SO_i2_Equipo120.git
+- echo "Ezequiel Ibañez IP: $(curl ifconfig.me) Hora: $(date +"%H:%M")" > fork.txt
+- git add . 
+- git commit -m "Commit gamma ezequiel"
+- git push
+
+Videla Ribodino Iván Agustín - ALFA: 
+3 - 
+- (Hace un fork del repositorio original desde GitHub)
+- git clone https://github.com/VidelaR/TP_SO_i2_Equipo120.git
+- echo "Nombre: Iván Agustín - Apellido: Videla Ribodino - IP: 190.111.246.49" > archivo.txt
+- git add . 
+- git commit -m "Alpha agrega modificacion fork"
+- git push
+- echo "$(cat archivo.txt) - Hora: $(date +%H:%M)" > archivo.txt
+- git add . 
+- git commit -m "Agrego hora fork.txt"
+- git push
+
+Gonzalez Ricardo - BETA: 
+4 - 
+- touch NuevoDato.txt
+- git add .
+- git commit -m "NuevoDato.txt"
+- git push
+
+4 - 
+- echo -e Videla Ribodino Iván Agustín\nGonzalez Ricardo\nIbañez Tejero Ezequiel" > respuesta_I2_Equipo120.txt
+
+Ibañez GAMMA - Videla - ALFA: 
+5 - 
+- git remote add upstream https://github.com/RicardoRGC/TP_SO_i2_Equipo120
+- git fetch upstream
+- git merge upstream/main
+
+6 - 7 - Preguntas y respuestas:
+Gonzalez Ricardo - BETA: 
+- (Agrega respuestas c y d)
+- git add .
+- git commit -m "respuesta"
+- git push
+Ibañez Tejero Ezequiel - GAMMA: 
+- git remote add upstream https://github.com/RicardoRGC/TP_SO_i2_Equipo120
+- git fetch upstream
+- git merge upstream/main
+- git pull
+- git add .
+- git commit -m "Respuestas a y b"
+- git push origin main
+Videla Ribodino Iván Agustín - ALFA:
+- (Agrega esta respuesta, la e)
+- git remote add upstream https://github.com/RicardoRGC/TP_SO_i2_Equipo120
+- git fetch upstream
+- git merge upstream/main
+- git pull
+- git add .
+- git commit -m "Respuesta e"
+- git push origin main
