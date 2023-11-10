@@ -21,7 +21,8 @@ d-¿Los datos que tenía en mi repositorio , editados por mi, se pierden si quie
 el fork?
 GitHub te da la opción de conservar las modificaciones echas en tu repositorio al momento de actualizar el fork.
 
-e - 
+e - realizar un listado, paso a paso ,de los comando necesarios para resolver este TP por
+orden de ejecución de los mismos junto con los apellidos y nombre de los alumnos.
 Gonzalez Ricardo - BETA: 
 1 - 
 - echo "# TP_SO_i2_Equipo120" >> README.md
