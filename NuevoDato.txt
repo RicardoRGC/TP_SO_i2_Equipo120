@@ -1,0 +1,7 @@
+A - Para actualizar tu repositorio al estado que esté el repo que hice FORK existen 2 maneras: En tu repositorio cuando el repositorio al que hiciste fork es modificado github  te permite aplicar los cambios sin borrar tus commits o si se quiere tambien se puede borrar, la otra forma es por comandos que seria; git remote add upstream URL_del_reposotorio, luego git fetch upstream y por ultimo git merge upstream/main
+
+B - En el contexto actual no, pero para hacer esto, Gamma debe seguir estos pasos:
+Agregar el remoto de Alfa:
+git remote add Alfa <URL_del_repositorio_de_Alfa>
+Actualizar la rama principal desde el repositorio de Alfa:
+git pull alfa main
