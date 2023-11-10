@@ -1,5 +1,3 @@
-<<<<<<< HEAD
 Nombre: Iván Agustín - Apellido: Videla Ribodino - IP: 190.111.246.49 - Hora: 09:20
-=======
 Ezequiel Ibañez IP:181.46.129.57 Hora: 09:02
->>>>>>> 7e412201ba7e477beeb3d4dd1f90524ad98c6b56
+
